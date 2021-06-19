@@ -11,11 +11,11 @@ import factorymethod.model.IService;
  * @author Weslei
  */
 public class EcommerceServiceFactory {
-    public static IService obterServico(String servico) {
+    public static IService getService(String service) {
         Class classe = null;
         Object objeto = null;
         try {
-            classe = Class.forName("semana2.factorymethod.model.Service" + servico);
+            classe = Class.forName("factorymethod.model.Service" + service);
             objeto = classe.newInstance();
         } catch (Exception ex) {
             throw new IllegalArgumentException("Ação inexistente");

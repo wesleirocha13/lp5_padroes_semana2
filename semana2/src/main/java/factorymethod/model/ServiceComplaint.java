@@ -9,7 +9,7 @@ package factorymethod.model;
  *
  * @author Weslei
  */
-public class ServiceComplaint implements IService{
+public class ServiceComplaint {
     
     public String create() {
         return "Reclamação criada";
